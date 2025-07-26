@@ -1,0 +1,139 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #aad4c2;
+  color: #000000;
+  padding: 40px; /* ระยะห่างรอบขอบของหน้าทั้งหมด */
+  line-height: 1.6; /* ความสูงของบรรทัด */
+}
+h1{
+  text-align: center;
+  color: #c44f06;
+  margin-bottom: 30px; /* ระยะห่างด้านล่างของหัวข้อ */
+  font-size: 2em; /* ขนาดฟอนต์ใหญ่เป็น 2 เท่า*/
+  border-bottom: 3px solid #4a4389 ; /* เส้นใต้หัวข้อ หนา 3px */
+  padding-bottom: 10px; /* เว้นช่องว่างระหว่างข้อความกับเส้นใต้ */
+}
+p{
+  background-color: #fff;
+  padding: 15px 20px; /* ระยะห่างภายในกล่อง (15px บน-ล่าง, 20px ซ้าย-ขวา) */
+  margin-bottom: 15px; /* ระยะห่างระหว่างย่อหน้า */
+  border-left: 5px solid #704d8e49; /* เส้นขอบซ้าย*/
+  box-shadow:0 2px 5px; /* เงาด้านล่าง */
+  border-radius: 6px; /* มุมกล่องมน 6px */
+}
+p strong{
+  display: inline;
+  width: 200px;
+  color:#89d32f
+}
+.gallery {
+  display: flex; /* จัดรูปภาพให้อยู่ในแถวเดียว (แนวนอน) */
+  justify-content: center;
+  gap: 20px; /* ระยะห่างระหว่างแต่ละรูป */
+  margin-top: 20px;/* เว้นระยะด้านบน */
+  flex-wrap: wrap; /* ถ้าหน้าจอเล็กให้ขึ้นบรรทัดใหม่อัตโนมัติ */
+}
+
+.gallery img {
+
+  width: 200px;
+  object-fit: cover; /* ปรับภาพให้เต็มกรอบ โดยไม่ยืด */
+  border-radius: 8px; /* มุมรูปภาพโค้งมน */
+  box-shadow: 0 2px 6px ; /* เงาอ่อนรอบภาพ*/
+}
+table{
+  width: 100%;
+  border-collapse: collapse;   /* รวมเส้นขอบไม่ให้ซ้อนกัน */
+  margin-top: 20px; /* เว้นระยะด้านบนของตาราง */
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.103)
+}
+th, td{
+  width: 50px;  /* กำหนดความกว้างของแต่ละเซลล์ */
+  height: 50px; /* กำหนดความสูงของแต่ละเซลล์ */
+  border: 1px solid #ffffff5d; /* เส้นขอบ */
+  text-align: center;
+  padding: 10px; /* เพิ่มระยะห่างในเซลล์ */
+}
+
+th {
+  background-color: #0c7bb358;
+  font-weight: normal; /*ตัวฟอนต์ธรรมดา */
+}
+.bold{
+  font-weight: bold;
+}
+.subject {
+    position: relative; /* ใช้สำหรับจัดวาง ::before ด้านใน */
+    border: 2px solid; /*เส้นขอบหนา*/
+    color: #0d156f; 
+}
+
+.subject::before {
+    content: ""; /*ไม่ใส่ข้อความ*/
+    position: absolute; /*วางทับตำแหน่งในเซลล์*/
+    top: 0;
+    left: 0;
+    width: 6px; /*ความกว้างของแถบ*/
+    height: 100%; /*ความสูงเต็มเซลล์*/
+}
+
+.color1 {
+    background-color: #fdf8e7;
+    border-color: #f5b400; /*สีของเส้นขอบ*/
+}
+.color1::before {
+    background-color: #f5b400;
+}
+
+.color2 {
+    background-color: #ffeff6;
+    border-color: #e64898; /*สีของเส้นขอ*/
+}
+.color2::before {
+    background-color: #e64898;
+}
+
+.color3 {
+    background-color: #eaf9fe;
+    border-color: #00b2e1; /*สีของเส้นขอบ*/
+}
+.color3::before {
+    background-color: #00b2e1;
+}
+
+.day {
+  position: relative; /*จัดวางแถบสีซ้าย*/
+  background-color: #f9f9f9; 
+  font-weight: bold;
+  padding-left: 12px; /*กำหนดระยะห่างด้านซ้าย*/
+}
+.day::before {
+  content: "";
+  position: absolute; /*วางทับตำแหน่งในเซลล์*/
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+}
+.monday::before {
+  background-color: #e00d0d;
+}
+.tuesday::before {
+  background-color: #71cffa;
+}
+.wednesday::before {
+  background-color: #243601;
+}
+.thursday::before {
+  background-color: #362694;
+}
+.friday::before {
+  background-color: #b3c82a;
+}
+.saturday::before {
+  background-color: #573f6c;
+}
+.sunday::before {
+  background-color: #ccb105;
+}
