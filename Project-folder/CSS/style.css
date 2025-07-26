@@ -7,7 +7,7 @@ body{
 }
 h1{
   text-align: center;
-  color: #c44f06;
+  color: #ac2908;/* หัวข้อ */
   margin-bottom: 30px; /* ระยะห่างด้านล่างของหัวข้อ */
   font-size: 2em; /* ขนาดฟอนต์ใหญ่เป็น 2 เท่า*/
   border-bottom: 3px solid #4a4389 ; /* เส้นใต้หัวข้อ หนา 3px */
